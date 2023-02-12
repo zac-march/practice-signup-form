@@ -25,35 +25,38 @@
             <div class="form-container">
                 <h1>Start your adventure today!</h1>
                 <form id="signup-form" action="#" method="post">
-                    <div id="first_name">
+                    <div>
                         <label for="first_name">First Name</label>
-                        <input type="text" id="first_name" placeholder="John" name="first_name">
+                        <input type="text" id="first_name" name="first_name" required>
                     </div>
-                    <div id="last_name">
+                    <div>
                         <label for="last_name">Last Name</label>
-                        <input type="text" id="last_name" placeholder="Smith" name="last_name">
+                        <input type="text" id="last_name" name="last_name" required>
                     </div>
-                    <div id="email">
+                    <div>
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="John@example.com" name="email">
+                        <input type="email" id="email" name="email" required>
                     </div>
-                    <div id="phone">
+                    <div>
                         <label for="phone">Phone</label>
-                        <input type="number" id="phone" placeholder="0421235678" name="phone">
+                        <input type="number" id="phone" name="phone" minlength="10" maxlength="10">
                     </div>
-                    <div id="password">
+                    <div>
                         <label for="password">Password</label>
-                        <input type="password" id="password" placeholder="********" name="password">
+                        <input type="password" id="password" name="password" minlength="12" required>
                     </div>
-                    <div id="password_confirm">
+                    <div>
                         <label for="password_confirm">Confirm Password</label>
-                        <input type="password" id="password_confirm" placeholder="********" name="password_confirm">
+                        <input type="password" id="passwordConfirm" name="passwordConfirm" minlength="12" required>
+                    </div>
+                    <div id="invalid-password">
+                        <small>* Passwords do not match</small>
                     </div>
                 </form>
             </div>
             <div>
-                <button form="signup-form" type="submit">Create Account</button>
-                <p>Already have an account? <a href="#">Log in</a></p>
+                <button id="submit" form="signup-form" type="submit">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
     
