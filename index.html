@@ -9,39 +9,54 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="image-container">
-        <img src="./images/camping.jpg">
-    </div>
-    <div class="form-container">
-        <h1>Sign up to The Backcountry Bulletin and stay informed on all things camping. Expert reviews, tips, recommendations and more delivered to your inbox. Enhance your outdoor experience now!</h1>
-        <div class="form">
-            <h2>Lets do this!</h2>
-            <form action="#" method="post">
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" placeholder="John" name="first_name">
-
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" placeholder="Smith" name="last_name">
-
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="John@example.com" name="email">
-
-                <label for="email">Phone</label>
-                <input type="number" id="email" placeholder="John@example.com" name="email">
-
-                <label for="email">Password</label>
-                <input type="email" id="email" placeholder="John@example.com" name="email">
-
-                <label for="email">Confirm Password</label>
-                <input type="email" id="email" placeholder="John@example.com" name="email">
-
-                <button type="submit">Create Account</button>
-
-            </form>
-
-            <p>Already have an account? <a href="#">Log in</a></p>
+    <div class="container">
+        <div class="left-container">
+            <div class="logo-banner">
+                <h1>CampEase</h1>
+            </div>
+            <img src="./images/camping.jpg">
         </div>
-    </div>
+        <div class="right-container">
+            <div class="call-to-action">
+                <h1>Sign up now and unlock the ultimate camping experience.
+                    Get access to exclusive deals, save your favorite
+                    destinations, and receive personalized recommendations.</h1>
+            </div>
+            <div class="form-container">
+                <h1>Start your adventure today!</h1>
+                <form id="signup-form" action="#" method="post">
+                    <div id="first_name">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" placeholder="John" name="first_name">
+                    </div>
+                    <div id="last_name">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" placeholder="Smith" name="last_name">
+                    </div>
+                    <div id="email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="John@example.com" name="email">
+                    </div>
+                    <div id="phone">
+                        <label for="phone">Phone</label>
+                        <input type="number" id="phone" placeholder="0421235678" name="phone">
+                    </div>
+                    <div id="password">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="********" name="password">
+                    </div>
+                    <div id="password_confirm">
+                        <label for="password_confirm">Confirm Password</label>
+                        <input type="password" id="password_confirm" placeholder="********" name="password_confirm">
+                    </div>
+                </form>
+            </div>
+            <div>
+                <button form="signup-form" type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
     
+</div>
 </body>
 </html>
