@@ -114,11 +114,12 @@ input:focus {
     box-shadow: 0 2px 5px rgb(204, 204, 204);
 }
 
-#invalid-password {
+#invalid-password-message {
     margin-top: -13px;
     color: red;
     visibility:hidden;
 }
+
 
 button {
     background: var(--accent-color);

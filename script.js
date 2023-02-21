@@ -1,7 +1,7 @@
 const passwordInput = document.getElementById("password")
 const passwordConfirmInput = document.getElementById("passwordConfirm")
 const submit = document.getElementById("submit")
-const invalidPasswordMessage = document.getElementById("invalid-password")
+const invalidPasswordMessage = document.getElementById("invalid-password-message")
 
 const invalidInputOutline = "solid 1px red"
 const defaultInputOutline = passwordInput.style.outline
